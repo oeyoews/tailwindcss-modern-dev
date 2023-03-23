@@ -3,4 +3,4 @@ modified: 20230323093707829
 title: $:/DefaultTiddlers
 type: text/vnd.tiddlywiki
 
-[list[$:/StoryList]]
+[[$:/plugins/oeyoews/tiddlywiki-tailwindcss]] [list[$:/StoryList]]
