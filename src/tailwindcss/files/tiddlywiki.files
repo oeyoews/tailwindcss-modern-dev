@@ -3,7 +3,11 @@
     {
       "file": "./styles.min.css",
       "fields": {
-        "title": "styles.min.css"
+        "title": "styles.min.css",
+        "type": "text/css",
+        "description": "Tailwindcss Styles",
+        "tags": "$:/tags/Stylesheet",
+        "hide-body": "yes"
       }
     }
   ],
