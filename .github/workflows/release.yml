@@ -49,9 +49,9 @@ jobs:
             **/node_modules
             ~/.pnpm-store
             ~/.npm
-          key: ${{ runner.os }}-node-${{ hashFiles('**/yarn-lock.json') }}
+          key: ${{ runner.os }}-node-${{ hashFiles('**/yarn.lock') }}
           restore-keys: |
-            ${{ runner.os }}-node-${{ hashFiles('**/yarn-lock.json') }}
+            ${{ runner.os }}-node-${{ hashFiles('**/yarn.lock') }}
             ${{ runner.os }}-node-
 
       - name: Install Dependencies
