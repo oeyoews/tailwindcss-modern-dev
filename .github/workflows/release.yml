@@ -58,7 +58,7 @@ jobs:
         run: yarn
 
       - name: Build Plugins
-        run: yarn run build
+        run: yarn build
 
       - name: Create Release
         uses: softprops/action-gh-release@v1
