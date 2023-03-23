@@ -49,16 +49,16 @@ jobs:
             **/node_modules
             ~/.pnpm-store
             ~/.npm
-          key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
+          key: ${{ runner.os }}-node-${{ hashFiles('**/yarn-lock.json') }}
           restore-keys: |
-            ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
+            ${{ runner.os }}-node-${{ hashFiles('**/yarn-lock.json') }}
             ${{ runner.os }}-node-
 
       - name: Install Dependencies
-        run: npm install -g pnpm && pnpm install
+        run: yarn
 
       - name: Build Plugins
-        run: pnpm run build
+        run: yarn run build
 
       - name: Create Release
         uses: softprops/action-gh-release@v1
