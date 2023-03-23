@@ -1,5 +1,11 @@
 ## Tailwindcss
 
+<!-- ## cpl library
+
+```sh
+https://oeyoews.github.io/tailwindcss-modern-dev/library/<encodeuri>
+``` -->
+
 ## Installation
 
 ```sh
