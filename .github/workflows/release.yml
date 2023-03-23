@@ -2,11 +2,11 @@ name: Release Plugins
 
 on:
   push:
-    branches:
-      - master
-      - main
-    # tags:
-    #   - 'v*.*.*'
+    # branches:
+    #   - master
+    #   - main
+    tags:
+      - 'v*.*.*'
     paths-ignore:
       - 'README.md'
       - 'wiki/**'
