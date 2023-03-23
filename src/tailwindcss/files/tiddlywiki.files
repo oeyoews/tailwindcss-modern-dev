@@ -1,0 +1,38 @@
+{
+  "tiddlers": [
+    {
+      "file": "./styles.min.css",
+      "fields": {
+        "title": "styles.min.css"
+      }
+    }
+  ],
+  "directories": [
+    {
+      "path": "docs",
+      "filesRegExp": "^.*\\.(html)$",
+      "fields": {
+        "title": {
+          "source": "basename",
+          "prefix": "$:/plugins/oeyoews/tailwindcss/docs/"
+        },
+        "caption": {
+          "source": "basename"
+        }
+      }
+    },
+    {
+      "path": "docs",
+      "filesRegExp": "^.*\\.(tid)$",
+      "fields": {
+        "title": {
+          "source": "basename",
+          "prefix": "$:/plugins/oeyoews/tiddlywiki-tailwindcss/docs/"
+        },
+        "caption": {
+          "source": "basename"
+        }
+      }
+    }
+  ]
+}
