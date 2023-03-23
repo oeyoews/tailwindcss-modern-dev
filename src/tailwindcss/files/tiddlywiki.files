@@ -3,7 +3,7 @@
     {
       "file": "./styles.min.css",
       "fields": {
-        "title": "styles.min.css",
+        "title": "$:/plugins/oeyoews/tiddlywiki-tailwindcss/styles.min.css",
         "type": "text/css",
         "description": "Tailwindcss Styles",
         "tags": "$:/tags/Stylesheet",
@@ -18,7 +18,7 @@
       "fields": {
         "title": {
           "source": "basename",
-          "prefix": "$:/plugins/oeyoews/tailwindcss/docs/"
+          "prefix": "$:/plugins/oeyoews/tiddlywiki-tailwindcss/docs/"
         },
         "caption": {
           "source": "basename"
