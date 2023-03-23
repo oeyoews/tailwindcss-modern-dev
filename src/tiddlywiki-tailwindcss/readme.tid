@@ -7,7 +7,7 @@ title: $:/plugins/oeyoews/tiddlywiki-tailwindcss/readme
 <img src="https://img.shields.io/badge/Tailwindcss-3.2.7-38bdf8?style=social">
 <img alt="GitHub file size in bytes" src="https://img.shields.io/github/size/oeyoews/neotw/plugins/oeyoews/tiddlywiki-tailwindcss/files/styles.min.css?style=social">
 
-{{$:/plugins/oeyoews/tiddlywiki-tailwindcss/docs/header}}
+<$transclude tiddler="$:/plugins/oeyoews/tiddlywiki-tailwindcss/docs/header" mode="inline"/>
 
 !! Use Tailwindcss On Tiddlywiki
 
@@ -58,6 +58,5 @@ title: $:/plugins/oeyoews/tiddlywiki-tailwindcss/readme
 * https://tailwindcss.com/docs/installation/play-cdn
 * https://tailwind.wyz.xyz/docs/installation
 * https://www.youtube.com/watch?v=GEYkwfYytAM&list=RDCMUCOe-8z68tgw9ioqVvYM4ddQ&start_radio=1&rv=GEYkwfYytAM&t=15
-
 
 </div>

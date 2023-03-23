@@ -9,6 +9,7 @@
     "update": "npm-check-updates -u",
     "new": "tiddlywiki-plugin-dev new",
     "dev": "tiddlywiki-plugin-dev dev",
+    "tw-build-vanilla": "npx tailwindcss --output ./src/tiddlywiki-tailwindcss/files/styles.dev.css -c tw-preset.js",
     "tw-build": "npx tailwindcss --output ./src/tiddlywiki-tailwindcss/files/styles.min.css --minify -c tw-preset.js",
     "tw-watch": "npx tailwindcss --output ./src/tiddlywiki-tailwindcss/files/styles.min.css --minify -c tw-preset.js -w",
     "build": "npm run clean && tiddlywiki-plugin-dev build",

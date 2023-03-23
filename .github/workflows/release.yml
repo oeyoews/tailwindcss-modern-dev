@@ -62,12 +62,19 @@ jobs:
       - name: Build Plugins
         run: yarn build
 
-      - name: Deploy
-        uses: peaceiris/actions-gh-pages@v3
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: |
-            ./dist
+      # - name: Deploy
+      #   uses: peaceiris/actions-gh-pages@v3
+      #   with:
+      #     github_token: ${{ secrets.GITHUB_TOKEN }}
+      #     publish_dir: |
+      #       ./dist/*.json
+      #     GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
+      - name: Create Release
+        uses: softprops/action-gh-release@v1
+        if: startsWith(github.ref, 'refs/tags/')
+        with:
+          files: |
+            dist/*.json
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
