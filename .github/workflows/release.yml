@@ -2,8 +2,11 @@ name: Release Plugins
 
 on:
   push:
-    tags:
-      - 'v*.*.*'
+    branches:
+      - master
+      - main
+    # tags:
+    #   - 'v*.*.*'
     paths-ignore:
       - 'README.md'
       - 'wiki/**'
@@ -47,12 +50,7 @@ jobs:
         with:
           path: |
             **/node_modules
-            ~/.pnpm-store
-            ~/.npm
-          key: ${{ runner.os }}-node-${{ hashFiles('**/yarn.lock') }}
-          restore-keys: |
-            ${{ runner.os }}-node-${{ hashFiles('**/yarn.lock') }}
-            ${{ runner.os }}-node-
+          key: ${{ runner.os }}-${{ hashFiles('**/package.json') }}
 
       - name: Install Dependencies
         run: yarn install
