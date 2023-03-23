@@ -7,6 +7,6 @@
   "type": "application/json",
   "plugin-type": "plugin",
   "name": "Tiddlywiki Tailwindcss",
-  "dependents": [],
+  "dependents": ["$:/plugins/tiddlywiki/markdown"],
   "list": "readme Tailwindcss explore"
 }
