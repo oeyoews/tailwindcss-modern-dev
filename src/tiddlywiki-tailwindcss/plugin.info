@@ -8,5 +8,5 @@
   "plugin-type": "plugin",
   "name": "Tiddlywiki Tailwindcss",
   "dependents": [],
-  "list": "readme Tailwindcss"
+  "list": "readme Tailwindcss explore"
 }
