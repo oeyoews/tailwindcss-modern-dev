@@ -33,6 +33,11 @@ concurrency:
   cancel-in-progress: true
 
 jobs:
+  deploy:
+    permissions:
+      contents: write
+      pages: write
+      id-token: write
   Plugins:
     runs-on: ubuntu-latest
 
