@@ -55,10 +55,10 @@ jobs:
             ${{ runner.os }}-node-
 
       - name: Install Dependencies
-        run: yarn
+        run: yarn install
 
       - name: Build Plugins
-        run: yarn build
+        run: yarn build && yarn publish:offline
 
       - name: Create Release
         uses: softprops/action-gh-release@v1
