@@ -20,15 +20,20 @@ for (let i = 0; i < filteredClassNames.length; i += 3) {
   tableRows.push(filteredClassNames.slice(i, i + 3));
 }
 
+// 生成example HTML代码
+function generateExampleHtml(className) {
+  return `<div class="${className}">${className}</div>`;
+}
+
 // 写入markdown文件
 fs.writeFileSync(
   "docs/output.md",
   tableRows
     .map(
       (rows) => `
-| Class Name | Description | Example |
-| --- | --- | --- |
-${rows.map((name) => `| ${name} | | |`).join("\n")}
+| Class Name | Example |
+| --- | --- |
+${rows.map((name) => `| ${name} | ${generateExampleHtml(name)} |`).join("\n")}
 `
     )
     .join("\n")
