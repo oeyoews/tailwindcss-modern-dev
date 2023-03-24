@@ -54,6 +54,6 @@
     "prettier": "^2.8.6",
     "prettier-plugin-tailwindcss": "^0.2.5",
     "tiddlywiki": "^5.2.6",
-    "tiddlywiki-plugin-dev": "^0.0.34"
+    "tiddlywiki-plugin-dev": "^0.0.35"
   }
 }
