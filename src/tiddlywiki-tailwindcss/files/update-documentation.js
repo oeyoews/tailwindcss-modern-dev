@@ -25,9 +25,17 @@ function generateExampleHtml(className) {
   return `<div class="${className}">${className}</div>`;
 }
 
-// 写入markdown文件
-fs.writeFileSync(
-  "tw/documention.md",
+// 计算总类数并写入markdown文件
+const totalClasses = filteredClassNames.length;
+console.log(`Total classes is ${totalClasses}`);
+fs.appendFileSync(
+  "tw/documentation.md",
+  `Total classes: <span class="font-bold">${totalClasses}</span>\n\n`
+);
+
+// 写入表格到markdown文件
+fs.appendFileSync(
+  "tw/documentation.md",
   tableRows
     .map(
       (rows) => `
