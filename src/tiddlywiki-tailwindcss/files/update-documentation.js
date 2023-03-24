@@ -30,7 +30,7 @@ const totalClasses = filteredClassNames.length;
 console.log(`Total classes is ${totalClasses}`);
 fs.appendFileSync(
   "tw/documentation.md",
-  `Total classes: <span class="font-bold">${totalClasses}</span>\n\n`
+  `Total classes: <span class="font-bold">${totalClasses}</span>`
 );
 
 // 写入表格到markdown文件
