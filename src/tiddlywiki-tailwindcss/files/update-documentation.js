@@ -44,5 +44,5 @@ const totalClasses = filteredClassNames.length;
 console.log(`Total classes is ${totalClasses}`);
 fs.appendFileSync(
   "tw/documentation.md",
-  `Total classes: <span class="font-bold">${totalClasses}</span>`
+  `\n Total classes: <span class="font-bold">${totalClasses}</span>`
 );

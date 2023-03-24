@@ -314,4 +314,5 @@
 | w-6 | <div class="w-6">w-6</div> |
 | w-64 | <div class="w-64">w-64</div> |
 | w-full | <div class="w-full">w-full</div> |
-Total classes: <span class="font-bold">225</span>
+
+ Total classes: <span class="font-bold">225</span>
