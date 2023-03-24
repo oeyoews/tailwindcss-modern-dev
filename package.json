@@ -10,7 +10,7 @@
     "new": "tiddlywiki-plugin-dev new",
     "dev": "tiddlywiki-plugin-dev dev",
     "build:tailwindcss-dev": "npx tailwindcss --output ./src/tiddlywiki-tailwindcss/files/styles.dev.css -c tw-preset.js",
-    "build:tailwindcss": "npx tailwindcss --output ./src/tiddlywiki-tailwindcss/files/styles.min.css --minify -c tw-preset.js",
+    "build:tailwindcss": "npx tailwindcss --output ./src/tiddlywiki-tailwindcss/files/styles.min.css --minify -c tw-preset.js && cd ./src/tiddlywiki-tailwindcss/files && node update-documention.js",
     "watch:tailwindcss": "npx tailwindcss --output ./src/tiddlywiki-tailwindcss/files/styles.min.css --minify -c tw-preset.js -w",
     "dev:tailwindcss": "npm-run-all --parallel  watch:tailwindcss dev",
     "build": "npm run clean && tiddlywiki-plugin-dev build",
