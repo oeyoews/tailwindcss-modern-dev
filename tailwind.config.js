@@ -1,4 +1,5 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  presets: [require("./tw-preset")]
-}
+  // autoload tw-preset file no this line???
+  presets: [require("./tw-preset")],
+};
