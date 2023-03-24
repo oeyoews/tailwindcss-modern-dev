@@ -13,40 +13,14 @@
   ],
   "directories": [
     {
-      "path": "docs",
+      "path": "dist",
       "filesRegExp": "^.*\\.(md)$",
       "fields": {
         "title": {
           "source": "basename",
-          "prefix": "$:/plugins/oeyoews/tiddlywiki-tailwindcss/docs/"
+          "prefix": "$:/plugins/oeyoews/tiddlywiki-tailwindcss/dist/"
         },
         "type": "text/markdown",
-        "caption": {
-          "source": "basename"
-        }
-      }
-    },
-    {
-      "path": "docs",
-      "filesRegExp": "^.*\\.(html)$",
-      "fields": {
-        "title": {
-          "source": "basename",
-          "prefix": "$:/plugins/oeyoews/tiddlywiki-tailwindcss/docs/"
-        },
-        "caption": {
-          "source": "basename"
-        }
-      }
-    },
-    {
-      "path": "docs",
-      "filesRegExp": "^.*\\.(tid)$",
-      "fields": {
-        "title": {
-          "source": "basename",
-          "prefix": "$:/plugins/oeyoews/tiddlywiki-tailwindcss/docs/"
-        },
         "caption": {
           "source": "basename"
         }

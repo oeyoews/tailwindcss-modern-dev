@@ -16,8 +16,8 @@ const filteredClassNames = uniqueClassNames
 
 // 每个表格不超过10行
 const tableRows = [];
-for (let i = 0; i < filteredClassNames.length; i += 3) {
-  tableRows.push(filteredClassNames.slice(i, i + 3));
+for (let i = 0; i < filteredClassNames.length; i += 10) {
+  tableRows.push(filteredClassNames.slice(i, i + 10));
 }
 
 // 生成example HTML代码
@@ -27,7 +27,7 @@ function generateExampleHtml(className) {
 
 // 写入markdown文件
 fs.writeFileSync(
-  "docs/output.md",
+  "dist/documention.md",
   tableRows
     .map(
       (rows) => `
